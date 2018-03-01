@@ -6,7 +6,7 @@ clean:
 
 run:
 	mkdir -p out
-	mitmdump --insecure --anticomp --stream 10k --script parseJson.py --port 8080 --onboarding-host hbotest.mitm.it | tee -a out/dirty-json.dump
+	mitmdump --insecure --anticomp --stream 10k --script parseJson.py --port 8080 --onboarding-host ritm.it | tee -a out/dirty-json.dump
 
 run-view:
-	mitmdump --insecure -z --stream 10k -s parse.py -d -p 8080 --onboarding-host hbotest.mitm.it
+	mitmdump --insecure -z --stream 10k -s parse.py -d -p 8080 --onboarding-host ritm.it
